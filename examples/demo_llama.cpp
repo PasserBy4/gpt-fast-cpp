@@ -12,8 +12,10 @@ int main(int argc, char **argv){
 
     std::string vocab_path = cmdParser.get<std::string>("vocab");
     std::string model_path = cmdParser.get<std::string>("model");
+    int tokens_limit = cmdParser.get<int>("limits");
+    
 
-    std::cout << "vocab" << std::endl;
+    std::cout << "vocab" << vocab_path << std::endl;
     return 0;
 }
 
